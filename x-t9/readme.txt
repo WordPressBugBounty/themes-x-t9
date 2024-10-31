@@ -2,7 +2,7 @@
 Contributors: kurudrive,vektor-inc,una9,sysbird,mtdkei
 Tested up to: 6.6
 Requires PHP: 7.4
-Stable tag: 1.26.4
+Stable tag: 1.26.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,6 +12,9 @@ The X-T9 is designed on the premise of full site editing function, and the user 
 GitHub : https://github.com/vektor-inc/x-t9
 
 == Changelog ==
+
+1.26.5
+[ Design Bug Fix ][ WooCommerce ] Fixed an issue where the number was not displayed in the WooCommerce quantity input field.
 
 1.26.4
 [ Design Bug Fix ][ button ] Fixed an issue where has-vk-color-primary-color was not applied to the outline of core buttons.
