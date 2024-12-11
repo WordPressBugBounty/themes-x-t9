@@ -140,7 +140,21 @@
 				"dvw",
 				"svh",
 				"lvh",
-				"dvh"
+				"dvh",
+				"svi",
+				"lvi",
+				"dvi",
+				"svb",
+				"lvb",
+				"dvb",
+				"vmin",
+				"svmin",
+				"lvmin",
+				"dvmin",
+				"vmax",
+				"svmax",
+				"lvmax",
+				"dvmax"
 			]
 		},
 		"border": {
