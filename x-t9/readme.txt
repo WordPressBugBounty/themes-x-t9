@@ -2,7 +2,7 @@
 Contributors: kurudrive,vektor-inc,una9,sysbird,mtdkei,yukinobu
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.34.1
+Stable tag: 1.34.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,6 +12,10 @@ The X-T9 is designed on the premise of full site editing function, and the user 
 GitHub : https://github.com/vektor-inc/x-t9
 
 == Changelog ==
+
+1.34.2
+[ Bug fix ] Fixed an issue where the layout would break on Windows devices depending on the nesting state of blocks.
+[ Bug fix ] Fix an issue where an alignwide element placed directly under post content with a specified content width is not centered properly.
 
 1.34.1
 [ Specification Change ][ Navigation ] Changed the footer mobile menu toggle to use the "Menu" icon.
