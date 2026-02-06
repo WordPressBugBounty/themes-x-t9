@@ -1,8 +1,8 @@
 === X-T9 ===
 Contributors: kurudrive,vektor-inc,una9,sysbird,mtdkei,yukinobu
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 1.34.5
+Stable tag: 1.37.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,6 +12,51 @@ The X-T9 is designed on the premise of full site editing function, and the user 
 GitHub : https://github.com/vektor-inc/x-t9
 
 == Changelog ==
+
+ 1.37.3
+[ Bug fix ] Fixed a layout issue in the editor when not using an iframe.
+
+1.37.2
+[ Bug fix ] Fixed an issue where there was no padding on the left and right sides of the content width within the cover block when the screen was narrower than the content width.
+[ Bug fix ] Since placing 'wide' inside 'is-layout-flow' (which is normally not allowed) causes it to align to the left, an 'auto' specification was added.
+
+1.37.1
+[ Bug fix ] Fixed a layout issue that occurred under certain conditions in the Outer block ( VK Blocks Pro ).
+
+1.37.0
+[ Other ][ Accordion ] Design adjustments for the accordion block introduced in WordPress 6.9
+[ Bug fix ] Fixed an issue where the typography line-height and appearance settings specified in Global Styles were not applied
+[ Bug fix ][ Navigation ] Fixed an issue where font size settings did not take effect in the Site Editor
+[ Bug fix ][ Submenu item ] Fixed an issue where theme spacing settings were overridden by those in WordPress 6.9
+[ Bug fix ][ Submenu item ] Fixed an issue where font size settings from the Site Editor were not applied
+
+1.36.2
+[ Bug fix ] Fixed an issue where the layout would break on mobile devices when 'Half Content Width' was specified in VK Blocks from version 1.36.0.
+
+1.36.1
+[ Bug fix ] Fixed an issue where inputted text was hard to see against a dark background.
+
+1.36.0
+[ Specification Change / Bug fix ] Fixed an issue where the layout would break when a custom content size was specified.
+[ Specification Change / Bug fix ] Add a style to input[type='submit'] because the submit button becomes invisible against a black background.
+[ Other ] Prevent automatic text zooming on iPhone browsers
+
+1.35.2
+[ Bug fix ] Adjusted z-index to prevent header from being hidden behind footer
+[ Bug fix ] add .text-danger class fallback color
+
+1.35.1
+[ Bug fix ] Fixed an issue where the mobile menu border color did not match the icon color.
+
+1.35.0
+[ Specification Change ] Add a z-index to prevent the header from being hidden behind the hero area.
+[ Specification Change ] Add Utility CSS class ( .form-block , .text-danger )
+[ Specification Change ] CSS design adjustments related to forms
+
+1.34.6
+[ Specification Change ] Apply primary color VK Blocks button hover color.
+[ Specification Change ] Changed buttons so that the same color as the primary hover is applied to :active and :focus states.
+[ Bug fix ] Prevented header menu from going under the footer.
 
 1.34.5
 [ Bug fix ] Fix default query in index /home / search ( If loading from a pattern automatically turns it into a custom query, then change it to writing directly to the template file instead. )
