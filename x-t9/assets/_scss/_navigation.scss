@@ -280,6 +280,20 @@ Overlay : allways ***********************
 			}
 		}
 	}
+
+	// デフォルトモーダルでの色指定 ///////////
+	// なぜ必要か？
+	// フッターの背景に濃い色を指定した場合、必然的にユーザーは文字色を明るい色に設定する
+	// しかしながら、WordPress がデフォルトのモーダルに対して背景に白を指定してくるため、文字も白指定では見えなくなる。
+	// この問題を回避するため標準文字色を指定する
+	// ちなみにデフォルトモーダルの背景色をフッターと同じにする手法については、
+	// フッター背景色がカスタムカラーの場合に同じ色に指定する事が困難＆可能だったとしても指定がカオスになるため、白背景と割り切って余計な事をしない。
+	.wp-block-navigation__responsive-container.has-modal-open:where(:not(.disable-default-overlay)){
+		.wp-block-navigation-item__content.wp-block-navigation-item__content,
+		.wp-block-navigation__responsive-container-close {
+			color:var(--wp--preset--color--text-normal);
+		}
+	}
 }
 
 /****************************************************** 

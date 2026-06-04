@@ -2,7 +2,7 @@
 Contributors: kurudrive,vektor-inc,una9,sysbird,mtdkei,yukinobu
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.40.0
+Stable tag: 1.41.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,6 +12,19 @@ The X-T9 is designed on the premise of full site editing function, and the user 
 GitHub : https://github.com/vektor-inc/x-t9
 
 == Changelog ==
+
+= 1.41.0 =
+[ Spec Change ][ Navigation Block ] Reworked dark-background color handling so links, text, and divider lines stay readable when a footer or other wrapper uses a dark background color
+[ New Feature ] Added block patterns ( Service Point, Service Flow, Pricing Plans, PR Contents, post list, and Query Loop patterns ) along with new "Post List Section", "Flow", and "Pricing" pattern categories
+[ Design Bug Fix ] Fixed an issue where footer patterns did not span the full width when pasted into the post content area
+[ Design Bug Fix ][ Navigation Block ] Fixed an issue where the horizontal padding of text-inline style navigation items was lost ( restored on both the front-end and in the editor )
+[ Spec Change ] Added a hover underline to post titles and the Read More button within the Query Loop block, and removed the top margin of post titles
+[ Spec Change ] Moved block patterns to the WordPress standard /patterns directory so they are auto-registered by core ( previously registered via register_block_pattern() from /inc/patterns )
+[ Spec Change ] Show only the theme's own block patterns in the block inserter by disabling the core bundled patterns and the WordPress.org remote pattern directory
+[ Bug Fix ] Fixed a fatal error that could occur in child themes created from older versions, by removing the legacy pattern registration hook that tried to require deleted pattern files
+[ Design Bug Fix ] Fixed an issue where patterns using Position: Fixed were not displayed in the editor pattern preview
+[ Design Bug Fix ] Fixed an issue where the border color of VK Blocks solid-fill buttons was incorrectly set to the primary color when a non-primary color was selected
+[ Design Bug Fix ] Fixed an issue where the text and border color of VK Blocks outline-style buttons turned white when a non-primary color was selected, which occurred when VK Blocks Pro split loading was enabled
 
 = 1.40.0 =
 [ New Feature ] Added support for the text columns feature introduced in WordPress 7.0

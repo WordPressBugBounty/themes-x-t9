@@ -75,7 +75,17 @@
 	}
 }
 
+// コアが padding:0 付けてきて余白がなくなるので上書き
+.wp-block-navigation[class*='nav--text-inline'] .wp-block-navigation-item.open-on-click button.wp-block-navigation-item__content:not(.wp-block-navigation-submenu__toggle){
+	padding-left: var(--nav-top-item-padding-horizontal);
+}
+
 /* group ------------------------------------------------- */
 *[class*="is-position-fixed"]{
 	width:100%;
+}
+
+// パターン一覧などの iframe で position:fixed だと表示自体されなくなってしまうので補正
+.block-editor-iframe__body .is-preview-mode .is-position-fixed {
+	position: relative !important;
 }
