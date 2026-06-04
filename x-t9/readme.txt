@@ -2,7 +2,7 @@
 Contributors: kurudrive,vektor-inc,una9,sysbird,mtdkei,yukinobu
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.41.0
+Stable tag: 1.41.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,6 +12,10 @@ The X-T9 is designed on the premise of full site editing function, and the user 
 GitHub : https://github.com/vektor-inc/x-t9
 
 == Changelog ==
+
+= 1.41.1 =
+[ Spec Change ] Fine-tuned the spacing, column widths, and colors of the post list block patterns
+[ Spec Change ][ Query Loop Block ] Removed the site-specific queryId from Query Loop patterns so it is no longer included in the distributed patterns
 
 = 1.41.0 =
 [ Spec Change ][ Navigation Block ] Reworked dark-background color handling so links, text, and divider lines stay readable when a footer or other wrapper uses a dark background color
