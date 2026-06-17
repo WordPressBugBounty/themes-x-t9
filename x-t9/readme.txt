@@ -2,7 +2,7 @@
 Contributors: kurudrive,vektor-inc,una9,sysbird,mtdkei,yukinobu
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.41.1
+Stable tag: 1.41.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,6 +12,9 @@ The X-T9 is designed on the premise of full site editing function, and the user 
 GitHub : https://github.com/vektor-inc/x-t9
 
 == Changelog ==
+
+= 1.41.2 =
+[ Design Bug Fix ] Removed the text-light class from post titles in block patterns so the font weight set in the editor is no longer overridden by its font-weight: lighter !important
 
 = 1.41.1 =
 [ Spec Change ] Fine-tuned the spacing, column widths, and colors of the post list block patterns
