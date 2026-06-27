@@ -2,7 +2,7 @@
 Contributors: kurudrive,vektor-inc,una9,sysbird,mtdkei,yukinobu
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.41.2
+Stable tag: 1.41.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,6 +12,16 @@ The X-T9 is designed on the premise of full site editing function, and the user 
 GitHub : https://github.com/vektor-inc/x-t9
 
 == Changelog ==
+
+= 1.41.6 =
+[ Other ] Change screenshot file
+
+= 1.41.4 =
+[ Design Bug Fix ][ Snow Monkey Forms ] Fixed form labels and input fields becoming invisible ( white text on white background ) in both the editor and front end when a dark palette such as BG Black is selected
+
+= 1.41.3 =
+[ Design Bug Fix ][ Navigation Block ] Fixed an issue where horizontal navigation styles ( submenu font size, item padding, and submenu background ) were not applied on initial placement because the .is-horizontal class is absent by default
+[ Design Bug Fix ][ Navigation Block ] Fixed an issue where the submenu dropdown icon dropped below the menu text on hover when using the active-border-bottom additional class style
 
 = 1.41.2 =
 [ Design Bug Fix ] Removed the text-light class from post titles in block patterns so the font weight set in the editor is no longer overridden by its font-weight: lighter !important
