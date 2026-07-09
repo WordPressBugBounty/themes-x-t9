@@ -85,6 +85,8 @@ require get_template_directory() . '/inc/block-styles.php';
 if ( version_compare( get_bloginfo( 'version' ), '6.6', '>=' ) ) {
 	require get_template_directory() . '/inc/typography-defaults.php';
 }
+// Workaround for a WordPress core style print-order bug affecting fluid typography (see file for details).
+require get_template_directory() . '/inc/global-styles-print-order-fix.php';
 // Load TGM.
 require get_template_directory() . '/inc/tgm-plugin-activation/tgm-config.php';
 
@@ -121,8 +123,10 @@ function xt9_get_the_archive_title() {
 		global $wp_query;
 		// get post type.
 		if ( ! empty( $wp_query->query_vars['post_type'] ) ) {
-			$post_type = $wp_query->query_vars['post_type'];
-			$title     = get_post_type_object( $post_type )->labels->name;
+			$post_type     = $wp_query->query_vars['post_type'];
+			// get_post_type_object() は未登録の投稿タイプに対して null を返すため、null ガードを入れる.
+			$post_type_obj = get_post_type_object( $post_type );
+			$title         = $post_type_obj ? $post_type_obj->labels->name : __( 'Archives', 'x-t9' );
 		} else {
 			$title = __( 'Archives', 'x-t9' );
 		}
