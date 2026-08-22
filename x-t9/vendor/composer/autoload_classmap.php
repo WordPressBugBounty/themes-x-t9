@@ -628,7 +628,6 @@ return array(
     'SebastianBergmann\\Type\\UnknownType' => $vendorDir . '/sebastian/type/src/type/UnknownType.php',
     'SebastianBergmann\\Type\\VoidType' => $vendorDir . '/sebastian/type/src/type/VoidType.php',
     'SebastianBergmann\\Version' => $vendorDir . '/sebastian/version/src/Version.php',
-    'Test_Xt9_Fix_Global_Styles_Print_Order' => $baseDir . '/tests/test_xt9_fix_global_styles_print_order.php',
     'Test_Xt9_Get_The_Archive_Title' => $baseDir . '/tests/test_xt9_get_the_archive_title.php',
     'TheSeer\\Tokenizer\\Exception' => $vendorDir . '/theseer/tokenizer/src/Exception.php',
     'TheSeer\\Tokenizer\\NamespaceUri' => $vendorDir . '/theseer/tokenizer/src/NamespaceUri.php',
