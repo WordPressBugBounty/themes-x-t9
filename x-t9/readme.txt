@@ -2,7 +2,7 @@
 Contributors: kurudrive,vektor-inc,una9,sysbird,mtdkei,yukinobu
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.42.0
+Stable tag: 1.42.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,6 +12,9 @@ The X-T9 is designed on the premise of full site editing function, and the user 
 GitHub : https://github.com/vektor-inc/x-t9
 
 == Changelog ==
+
+= 1.42.1 =
+[ Bug Fix ][ Snow Monkey Forms ] Fixed an issue where the fixed-header scroll offset script was missing from the distributed theme package, causing a PHP warning and leaving the scroll position uncorrected
 
 = 1.42.0 =
 [ Spec Change ] Changed the Sass breakpoint variables to a max-value-only set ( $xs-max / $sm-max / $md-max / $lg-max / $xl-max ) and rewrote the related media queries using range syntax ( width <= / > ) instead of min-width / max-width, aligning boundary handling with the WordPress standard
